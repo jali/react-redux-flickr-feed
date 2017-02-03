@@ -1,2 +1,17 @@
 # react-redux-flickr-feed
-using flick jsonp feed in react app
+
+Using flick jsonp feed with react/redux app
+
+Installation:
+-------------
+
+	$ npm install
+
+
+Run app:
+--------
+
+	$ npm run dev
+
+
+Then goto: [http://localhost:8080](http://localhost:8080)
