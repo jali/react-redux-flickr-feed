@@ -1,5 +1,4 @@
 import React from 'react';
-// import Grid from './Grid';
 import { connect } from 'react-redux';
 import { fetchPublicPhotos } from '../actions/flickrActions';
 
