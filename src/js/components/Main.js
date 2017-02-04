@@ -27,7 +27,7 @@ export default class Layout extends React.Component {
         <div className="border-class">
           <img className="thumbnail img-thumbnail" src={data.data.items[k].media.m} />
         </div>
-        <p>{(data.data.items[k].tags).split(" ").map((key, tag) => <button key={key.toString()} className="btn btn-default">{tag}</button>)}</p>
+        <p>{(data.data.items[k].tags).split(" ").map((tag) => <button key={tag} className="btn btn-default">{tag}</button>)}</p>
         </div>
         </div>);
     }
