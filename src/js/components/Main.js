@@ -8,7 +8,7 @@ import { fetchPublicPhotos } from '../actions/flickrActions';
   };
 })
 
-export default class Layout extends React.Component {
+export default class Main extends React.Component {
   constructor() {
     super();
     this.photos = []
