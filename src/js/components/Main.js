@@ -21,16 +21,22 @@ export default class Layout extends React.Component {
   render() {
     const data = this.props;
     for(var k in data.data.items){
-      this.photos.push(<div className="col-xs-6"><div className="thumbnail">
-      <div className="caption">Title: {data.data.items[k].title} </div>
-      <div className="border-class"><img className="img-thumbnail" src={data.data.items[k].media.m} /></div><p>tags: {data.data.items[k].tags}</p></div></div>);
+      this.photos.push(<div className="col-lg-3 col-xs-6 col-sm-4" key={k.toString()}>
+        <div className="thumbnail">
+        <div className="caption">{(data.data.items[k].title).slice(0,40)} </div>
+        <div className="border-class">
+          <img className="thumbnail img-thumbnail" src={data.data.items[k].media.m} />
+        </div>
+        <p>{(data.data.items[k].tags).split(" ").map((tag) => <button className="btn btn-default">{tag}</button>)}</p>
+        </div>
+        </div>);
     }
     
     return (
       <div className="container">
         <h1>Flickr latest images</h1>
         <h3>{data.data.title}</h3>
-        <div className="list-group">
+        <div className="row">
           {this.photos}
         </div>
       </div>
