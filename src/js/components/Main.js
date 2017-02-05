@@ -21,7 +21,7 @@ export default class Main extends React.Component {
   render() {
     const data = this.props;
     for(var k in data.data.items){
-      this.photos.push(<div className="col-lg-3 col-xs-6 col-sm-4" key={k.toString()}>
+      this.photos.push(<div className="col-lg-3 col-xs-6 col-sm-6" key={k.toString()}>
         <div className="thumbnail">
         <div className="caption">{(data.data.items[k].title).slice(0,40)} </div>
         <div className="border-class">
