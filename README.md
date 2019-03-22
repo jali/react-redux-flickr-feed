@@ -1,6 +1,6 @@
 # react-redux-flickr-feed
 
-Using flick jsonp feed with react/redux app
+Using flickr jsonp feed with react/redux app
 
 Installation:
 -------------
